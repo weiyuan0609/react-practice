@@ -1,2 +1,2 @@
 # react-practice
-react practice product test test
+react practice product
