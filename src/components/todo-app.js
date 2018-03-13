@@ -12,36 +12,27 @@ class ToDoApp extends React.Component {
     }
 
     onInputChange = (event) => {
-        this.setState({newToDo: event.target.value})
+        this.props.inputChange(event.target.value)
     }
 
     onInputSubmit = (event) => {
         event.preventDefault()
-        this.setState((previousState) => ({
-            list: [...previousState.list, previousState.newToDo ],
-            newToDo: ''
-        }))
-        console.log('-------------------')
-        console.log(this.state.list)
+        this.props.inputSubmit()
     }
 
     onDeleteItem = (i) => {
         event.preventDefault()
-        this.setState((previousState) => ({
-            list: [
-                ...previousState.list.slice(0, i),
-                ...previousState.list.slice(i+1)
-            ]
-        }))
+        this.props.deleteListItem(i)
     }
 
     render() {
+        console.log(this.props)
         return (
             <div className="panel-body">
                 <h1>My To Do App</h1>
                 <hr/>
                 List goes here：
-                <List items={this.state.list} onDeleteItem={this.onDeleteItem}/>
+                <List items={this.props.toDoApp.list} onDeleteItem={this.onDeleteItem}/>
                 <Input onInputChange={this.onInputChange} onInputSubmit={this.onInputSubmit}/>
             </div>
         );
