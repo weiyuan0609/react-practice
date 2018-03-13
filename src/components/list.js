@@ -3,10 +3,12 @@ import React from 'react'
 const List = (props) => {
     console.log(props.items)
     const list = props.items.map((el, i)=>(
-        <li key={i}><h2>{el}</h2></li>
+        <li key={i}>
+            <span>{el}</span>
+            <button className="btn" onClick={() => props.onDeleteItem(i)}>x</button>
+        </li>
     ));
 
-    console.log({ list })
     return (
         <div>
             <ul>
