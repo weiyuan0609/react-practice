@@ -7,7 +7,7 @@ import configureStore from './redux/configureStore'
 const store = configureStore()
 
 class App extends React.Component {
-    render() {
+    render () {
         return (
             <Provider store={store}>
                 <ToDoAppContainer />

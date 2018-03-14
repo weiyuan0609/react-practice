@@ -3,8 +3,7 @@ import List from './list'
 import Input from './input'
 
 class ToDoApp extends React.Component {
-
-    componentWillMount() {
+    componentWillMount () {
         this.setState({
             list: ['thing1', 'thing2', 'thing3'],
             newToDo: ''
@@ -25,7 +24,7 @@ class ToDoApp extends React.Component {
         this.props.deleteListItem(i)
     }
 
-    render() {
+    render () {
         console.log(this.props)
         return (
             <div className="panel-body">
@@ -35,7 +34,7 @@ class ToDoApp extends React.Component {
                 <List items={this.props.toDoApp.list} onDeleteItem={this.onDeleteItem}/>
                 <Input onInputChange={this.onInputChange} onInputSubmit={this.onInputSubmit}/>
             </div>
-        );
+        )
     }
 }
 
