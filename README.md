@@ -11,7 +11,7 @@ react practice product
    npm install --save-dev webpack-dev-server - webpack官网出的一个小型express服务器，主要特性是支持热加载  
    npm install --save-dev babel-core - 安装Babel,可以把ES6转换为ES5，注意Babel最新的V6版本分为babel-cli和babel-core两个模块，这里只需要用babel-cor即可  
    npm install --save-dev babel-loader - webpack中需要用到的loader.  
-   安装babel相关插件
+   安装babel相关插件  
    npm install --save babel-runtime  
    npm install --save-dev babel-plugin-transform-runtime  
    npm install --save-dev babel-preset-es2015  
