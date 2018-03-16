@@ -4,7 +4,7 @@ react practice product
 
 ## 搭建简单React工程
 1. npm init 生成 package.json 文件.
-2. 安装依赖包
+2. 安装依赖包  
    npm install --save react - 安装React.  
    npm install --save react-dom 安装React Dom,这个包是用来处理virtual DOM。用React Native的话，这里就是安装react-native。  
    npm install --save-dev webpack - 安装Webpack  
@@ -108,3 +108,4 @@ https://redux.js.org/
 
 其他：  
 http://www.ruanyifeng.com/blog/2016/09/react-technology-stack.html  
+https://www.jianshu.com/p/324fd1c124ad
