@@ -105,6 +105,7 @@ https://doc.react-china.org/docs/hello-world.html
    
 redux:   
 https://redux.js.org/
+http://www.redux.org.cn
 
 其他：  
 http://www.ruanyifeng.com/blog/2016/09/react-technology-stack.html  
